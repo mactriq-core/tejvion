@@ -5,7 +5,6 @@ import ServicesSection from "@/components/pages/home/services";
 import WhyUs from "@/components/pages/home/whyus";
 import Footer from "@/components/ui/footer";
 import Header from "@/components/ui/header";
-import Image from "next/image";
 
 export default function Home() {
   return (

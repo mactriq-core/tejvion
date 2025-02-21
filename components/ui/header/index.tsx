@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 const Header = () => {
     const [showNav, setShowNav] = useState(false);
@@ -23,10 +24,10 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="flex space-x-4 mb-4 md:mb-0">
-                    <a href="#" className="text-gray-600 hover:text-black"><i className="fab fa-twitter"></i></a>
-                    <a href="#" className="text-gray-600 hover:text-black"><i className="fab fa-facebook"></i></a>
-                    <a href="#" className="text-gray-600 hover:text-black"><i className="fab fa-pinterest"></i></a>
-                    <a href="#" className="text-gray-600 hover:text-black"><i className="fab fa-instagram"></i></a>
+                    <Link href="#" className="text-gray-600 hover:text-black"><i className="fab fa-twitter"></i></Link>
+                    <Link href="#" className="text-gray-600 hover:text-black"><i className="fab fa-facebook"></i></Link>
+                    <Link href="#" className="text-gray-600 hover:text-black"><i className="fab fa-pinterest"></i></Link>
+                    <Link href="#" className="text-gray-600 hover:text-black"><i className="fab fa-instagram"></i></Link>
                 </div>
                 <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
                     <div className="flex items-center">
@@ -48,13 +49,13 @@ const Header = () => {
             </button>
             <nav className={`w-full mt-4 ${showNav ? 'block' : 'hidden'} md:block`}>
                 <ul className="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-8">
-                    <li><a href="/#hero" className={`hover:text-gray-400 ${activeLink === '/#home' ? 'text-green-500' : ''}`}>Home</a></li>
-                    <li><a href="/#about" className={`hover:text-gray-400 ${activeLink === '/#about' ? 'text-green-500' : ''}`}>About</a></li>
-                    <li><a href="/#construction" className={`hover:text-gray-400 ${activeLink === '/#construction' ? 'text-green-500' : ''}`}>Construction</a></li>
-                    <li><a href="/#agriculture" className={`hover:text-gray-400 ${activeLink === '/#agriculture' ? 'text-green-500' : ''}`}>Agriculture</a></li>
-                    <li><a href="/#transport" className={`hover:text-gray-400 ${activeLink === '/#transport' ? 'text-green-500' : ''}`}>Transport</a></li>
-                    <li><a href="/#infrastructure" className={`hover:text-gray-400 ${activeLink === '/#infrastructure' ? 'text-green-500' : ''}`}>Infrastructure</a></li>
-                    <li><a href="/#contact" className={`hover:text-gray-400 ${activeLink === '/#contact' ? 'text-green-500' : ''}`}>Contact</a></li>
+                    <li><Link href="/#hero" className={`hover:text-gray-400 ${activeLink === '/#home' ? 'text-green-500' : ''}`}>Home</Link></li>
+                    <li><Link href="/#about" className={`hover:text-gray-400 ${activeLink === '/#about' ? 'text-green-500' : ''}`}>About</Link></li>
+                    <li><Link href="/#construction" className={`hover:text-gray-400 ${activeLink === '/#construction' ? 'text-green-500' : ''}`}>Construction</Link></li>
+                    <li><Link href="/#agriculture" className={`hover:text-gray-400 ${activeLink === '/#agriculture' ? 'text-green-500' : ''}`}>Agriculture</Link></li>
+                    <li><Link href="/#transport" className={`hover:text-gray-400 ${activeLink === '/#transport' ? 'text-green-500' : ''}`}>Transport</Link></li>
+                    <li><Link href="/#infrastructure" className={`hover:text-gray-400 ${activeLink === '/#infrastructure' ? 'text-green-500' : ''}`}>Infrastructure</Link></li>
+                    <li><Link href="/#contact" className={`hover:text-gray-400 ${activeLink === '/#contact' ? 'text-green-500' : ''}`}>Contact</Link></li>
                 </ul>
             </nav>
         </header>

@@ -32,7 +32,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="flex flex-col items-start md:items-end">
-                    <p className="mb-4">Let's do it!</p>
+                    <p className="mb-4">Let&apos;s do it!</p>
                     <div className="flex space-x-4">
                         <a href="#" className="text-white hover:text-green-500"><i className="fab fa-facebook-f"></i></a>
                         <a href="#" className="hover:text-green-500"><i className="fab fa-twitter"></i></a>
